@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="LOFIN.js">
+   </script>
+   <link rel="stylesheet" href="login.css">
+	<style>
+		body{
+                width: 900px;
+                height: 900px;
+                border-radius: 50%;
+                background: rgb(0, 0, 255);
+                -webkit-animation: myfirst 10s;
+                animation: myfirst 10s;
+                text-align: center;
+                
+            }
+            @keyframes myfirst{
+                0% {background: rgb(0, 0, 255);}
+                25%{background: rgb(55, 255, 0);}
+		50%{background: rgb(255,0,0);}
+		75%{background: orange}
+                100%{background: rgb(255, 255, 255);}
+            }
+	</style>
+</head>
+<body>
+   <div id="form.container">
+    <h1>Please login</h1>
+    <FOrm action="" onsubmit="return validateform()">
+        <input type="text" placeholder="UserName" id="username" required>
+        <br>
+        <p id="userError" class="error"></p>
+            <input type="password" placeholder="password" id="password" required>
+            <br>
+            <p id="passError" class="errors"></p>
+            <br>
+            <input type="submit" value="SUBMIT">
+    </FOrm>
+   </div>
+</body>
+</html>
